@@ -8,7 +8,8 @@ html {
   font-size: 62.5%; }
 
 body {
-  font-family: "Poppins", sans-serif; }
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(#c1e9fe 1%, #e4cbf0 6%, white 30%); }
 
 section {
   margin: 70px 0; }
@@ -119,9 +120,10 @@ header {
   width: 100%; }
 
 .about__container img {
-  width: 100%;
+  width: 65%;
   height: auto;
   border-radius: 50%;
+  display: block;
   margin: 0 auto; }
 
 .work__paragraph--title {
@@ -168,8 +170,9 @@ header {
   width: 100%; }
 
 .work__container img {
-  width: 100%;
+  width: 80%;
   height: auto;
+  display: block;
   margin: 0 auto; }
 
 .portfolio__title {
@@ -182,13 +185,17 @@ header {
   width: 100%; }
 
 .portfolio__container div img {
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 40px; }
+  .portfolio__container div img:last-child {
+    margin-bottom: 0; }
 
 .contact {
   position: relative;
   background-image: url("../assets/form-background.svg");
   background-size: cover;
   background-position: center;
+  background-position-y: 9rem;
   padding: 90px 0; }
 
 .contact .container {
@@ -216,12 +223,14 @@ header {
 
 .contact form textarea {
   background-color: #f8f8f8;
+  color: #71747a;
   padding: 16px;
   width: 255px;
   width: 90%;
   max-width: 748px;
   border-radius: 16px;
-  margin-bottom: 16px; }
+  margin-bottom: 16px;
+  font-family: "Poppins", sans-serif; }
   .contact form textarea::placeholder {
     font-family: "Poppins", sans-serif; }
 
@@ -234,10 +243,12 @@ header {
   background: #f8f8f8;
   border: 0;
   border-radius: 10px;
-  color: white;
+  color: #71747a;
   padding: 17px;
   border-top-right-radius: 0;
-  border-bottom-right-radius: 0; }
+  border-bottom-right-radius: 0;
+  border: 1px solid #000;
+  border-right: none; }
   .contact form div input::placeholder {
     font-family: "Poppins", sans-serif; }
 
@@ -247,8 +258,10 @@ header {
   border-radius: 7px;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
-  color: white;
-  padding: 13px 10%; }
+  color: #fff;
+  padding: 13px 10%;
+  border: 1px solid #000;
+  border-left: none; }
 
 footer {
   height: 60px; }

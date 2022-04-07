@@ -97,9 +97,10 @@ header {
 }
 
 .about__container img {
-  width: 100%;
+  width: 65%;
   height: auto;
   border-radius: 50%;
+  display: block;
   margin: 0 auto;
 }
 
@@ -144,8 +145,9 @@ header {
 }
 
 .work__container img {
-  width: 100%;
+  width: 80%;
   height: auto;
+  display: block;
   margin: 0 auto;
 }
 
@@ -154,14 +156,16 @@ header {
 }
 
 .portfolio__container {
-}
-
-.portfolio__container {
   width: 100%;
 }
 
 .portfolio__container div img {
   width: 100%;
+  margin-bottom: 40px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .contact {
@@ -169,6 +173,7 @@ header {
   background-image: url("../assets/form-background.svg");
   background-size: cover;
   background-position: center;
+  background-position-y: 9rem;
   padding: 90px 0;
 }
 
@@ -202,12 +207,14 @@ header {
 
 .contact form textarea {
   background-color: #f8f8f8;
+  color: $text-color;
   padding: 16px;
   width: 255px;
   width: 90%;
   max-width: 748px;
   border-radius: $radius;
   margin-bottom: 16px;
+  font-family: "Poppins", sans-serif;
 
   &::placeholder {
     font-family: "Poppins", sans-serif;
@@ -224,10 +231,12 @@ header {
   background: #f8f8f8;
   border: 0;
   border-radius: 10px;
-  color: white;
+  color: $text-color;
   padding: 17px;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
+  border: 1px solid #000;
+  border-right: none;
 
   &::placeholder {
     font-family: "Poppins", sans-serif;
@@ -240,8 +249,10 @@ header {
   border-radius: 7px;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
-  color: white;
+  color: #fff;
   padding: 13px 10%;
+  border: 1px solid #000;
+  border-left: none;
 }
 
 footer {
