@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Karla Sura Portfolio</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <script src="./js/main.js" defer></script>
 </head>
@@ -36,20 +37,27 @@
                     <h2 class="about__paragraph--title">
                         Hi! I'm Karla Sura.
                     </h2>
+
                     <p class="about__paragraph--text">
                         A passionate UX/UI graphic designer that likes to find creative solutions to your problems. Do
                         you have a proyect in mind that you want to acomplish?
                     </p>
-                    <p class="about__paragraph--scroll">
+
+                    <a href="#work" class="about__paragraph--scroll">
                         <i class="ri-arrow-down-line"></i>Scroll to explore
-                    </p>
+                    </a>
+
                     <div class="about__paragraph--icons">
-                        <a target="_blank" href="#"><i class="ri-linkedin-line"></i></a>
-                        <a href="#"><i class="ri-behance-line"></i></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/karlasura/"><i
+                                class="ri-linkedin-line"></i></a>
+                        <a target="_blank"
+                            href="https://www.behance.net/karlasura?tracking_source=search_users%7Ckarla%20sura"><i
+                                class="ri-behance-line"></i></a>
                     </div>
+
                 </div>
 
-                <div class="about__container">
+                <div class="about__container" data-aos="fade-up">
                     <img src="./assets/KarlaSura.png" alt="Owner">
                 </div>
             </div>
@@ -69,9 +77,9 @@
                         Currently working on Grab Digital,
                         designing high quality emails and digital assets.
                     </p>
-                    <p class="work__paragraph--scroll">
+                    <a href="#portfolio" class="work__paragraph--scroll">
                         <i class="ri-arrow-right-line"></i>Scroll to explore
-                    </p>
+                    </a>
                 </div>
 
                 <div class="work__container">
@@ -85,16 +93,19 @@
                 <h2 class="portfolio__title">Portfolio</h2>
                 <div class="portfolio__container">
                     <div class="portfolio__image--1">
-                        <img src="./assets/portfolio1.png" alt="Portfolio">
+                        <img data-aos="flip-right" loading="lazy" src="./assets/portfolio1.png" alt="Portfolio">
                     </div>
                     <div class="portfolio__image--2">
-                        <img src="./assets/portfolio2.png" alt="Portfolio">
+                        <img data-aos="flip-right" data-aos-duration="2000" loading="lazy" src="./assets/portfolio2.png"
+                            alt="Portfolio">
                     </div>
                     <div class="portfolio__image--3">
-                        <img src="./assets/portfolio3.png" alt="Portfolio">
+                        <img data-aos="flip-right" data-aos-duration="1000" loading="lazy" src="./assets/portfolio3.png"
+                            alt="Portfolio">
                     </div>
                     <div class="portfolio__image--4">
-                        <img src="./assets/portfolio4.png" alt="Portfolio">
+                        <img data-aos="flip-right" data-aos-duration="500" loading="lazy" src="./assets/portfolio4.png"
+                            alt="Portfolio">
                     </div>
                 </div>
             </div>
@@ -126,6 +137,10 @@
     <footer>
         <h3>© 2022- Karla Sura<i class="ri-heart-fill"></i></h3>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

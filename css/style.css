@@ -5,11 +5,12 @@
   box-sizing: border-box; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
 
 body {
   font-family: "Poppins", sans-serif;
-  background: linear-gradient(#c1e9fe 1%, #e4cbf0 6%, white 30%); }
+  background: linear-gradient(#c1e9fe 1%, #e4cbf0 12%, white 40%); }
 
 section {
   margin: 70px 0; }
@@ -37,12 +38,17 @@ header {
 .header__logo i {
   font-size: 28px; }
 
-.header__nav.visible {
-  display: block; }
-
 .header__nav {
   margin-top: 64px;
-  display: none; }
+  height: 0;
+  opacity: 0;
+  transition: all 0.2s; }
+
+.header__nav.visible {
+  display: block;
+  transition: all 0.5s;
+  opacity: 1;
+  height: 144px; }
 
 .header__list {
   text-align: center; }
@@ -276,5 +282,16 @@ footer h3 {
   align-items: center;
   text-align: center;
   justify-content: center; }
+
+@media (min-width: 641px) and (max-width: 768px) {
+  body {
+    background: linear-gradient(#c1e9fe 1%, #e4cbf0 10%, white 40%); }
+
+  .about__paragraph--text,
+  .work__paragraph--text {
+    width: 500px; }
+
+  .portfolio__title {
+    margin-bottom: 50px; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -16,13 +16,20 @@ header {
   font-size: 28px;
 }
 
-.header__nav.visible {
-  display: block;
-}
-
 .header__nav {
   margin-top: 64px;
-  display: none;
+  //display: hidden;
+  height: 0;
+  opacity: 0;
+  //transition: opacity 0.5s linear;
+  transition: all 0.2s;
+}
+
+.header__nav.visible {
+  display: block;
+  transition: all 0.5s;
+  opacity: 1;
+  height: 144px;
 }
 
 .header__list {
@@ -267,3 +274,5 @@ footer h3 {
   text-align: center;
   justify-content: center;
 }
+
+@import "./media-queries/tablet";

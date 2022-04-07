@@ -8,14 +8,15 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: "Poppins", sans-serif;
   background: linear-gradient(
     rgba(193, 233, 254, 1) 1%,
-    rgba(228, 203, 240, 1) 6%,
-    rgba(255, 255, 255, 1) 30%
+    rgba(228, 203, 240, 1) 12%,
+    rgba(255, 255, 255, 1) 40%
   );
 }
 
