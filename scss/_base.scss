@@ -1,0 +1,13 @@
+@mixin text-website {
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  color: $text-color;
+}
+
+@mixin title-website {
+  font-weight: 400;
+  font-size: 6rem;
+  line-height: 5.6rem;
+  color: $title-color;
+}
