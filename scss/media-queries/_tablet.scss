@@ -1,0 +1,18 @@
+@media (min-width: 641px) and (max-width: 768px) {
+  body {
+    background: linear-gradient(
+      rgba(193, 233, 254, 1) 1%,
+      rgba(228, 203, 240, 1) 10%,
+      rgba(255, 255, 255, 1) 40%
+    );
+  }
+
+  .about__paragraph--text,
+  .work__paragraph--text {
+    width: 500px;
+  }
+
+  .portfolio__title {
+    margin-bottom: 50px;
+  }
+}

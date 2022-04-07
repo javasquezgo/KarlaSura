@@ -293,5 +293,58 @@ footer h3 {
 
   .portfolio__title {
     margin-bottom: 50px; } }
+@media (min-width: 769px) {
+  body {
+    background: linear-gradient(#c1e9fe 1%, #e4cbf0 3%, white 27%); }
+
+  header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+
+  .header__logo i {
+    display: none; }
+
+  .header__nav {
+    height: auto;
+    opacity: 1;
+    margin-top: 0; }
+
+  .header__list {
+    display: flex; }
+
+  .header__item {
+    margin-bottom: 0; }
+    .header__item:nth-child(2) {
+      margin: 0 67.5px; }
+
+  .header__item a span:hover {
+    border-top: 1px solid #c7a3e4;
+    border-bottom: 1px solid #c7a3e4; }
+
+  .header__contact {
+    margin-top: 0; }
+
+  section {
+    margin: 150px 0; }
+
+  .about .container {
+    display: flex;
+    align-items: center; }
+
+  .about__paragraph,
+  .about__container {
+    width: 50%; }
+
+  .work .container {
+    display: flex;
+    align-items: center; }
+
+  .work__paragraph,
+  .work__container {
+    width: 50%; }
+
+  .contact {
+    background-position-y: center; } }
 
 /*# sourceMappingURL=style.css.map */
